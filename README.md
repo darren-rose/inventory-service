@@ -3,7 +3,7 @@
 Supports Ansible
 
 
-```ansible -i ./inventory.sh -m ping databases```
+```ansible -i ./ansible-invoked-inventory.sh -m ping databases```
 
 ### Note
 
