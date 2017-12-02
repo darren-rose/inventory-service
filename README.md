@@ -1,6 +1,15 @@
 # Inventory Service
 
-Supports Ansible - currently expects the inventory service to localhost:8080
+Supports Ansible
 
 
 ```ansible -i ./inventory.sh -m ping databases```
+
+### Note
+
+The following environment variables are expected:
+
+```INVENTORY_HOST=localhost```
+
+```INVENTORY_PORT=8080```
+
