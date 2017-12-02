@@ -27,8 +27,8 @@ class WebController {
     private Logger LOGGER = LoggerFactory.getLogger(WebController.class);
 
 
-    @GetMapping("/list")
-    public Map<String, Group> list() {
+    @GetMapping("/hosts")
+    public Map<String, Group> hosts() {
         Map<String, Group> result = new HashMap<>();
         Group databases = new Group();
         databases.setHosts(Arrays.asList("host1.example.com", "host2.example.com"));
@@ -42,8 +42,8 @@ class WebController {
         return result;
     }
 
-    @GetMapping("/host/{host}")
-    public Map<String, String> hostVariables(@PathVariable("host") String host) {
+    @GetMapping("/hosts/{host}")
+    public Map<String, String> host(@PathVariable("host") String host) {
         LOGGER.info("--host: {}", host);
         Map<String, String> result = new HashMap<>();
         result.put("favcolor", "red");
