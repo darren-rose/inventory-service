@@ -9,7 +9,7 @@ Supports Ansible
 
 The following environment variables are expected:
 
-```INVENTORY_HOST=localhost```
+```INVENTORY_HOST=<server-name>```
 
-```INVENTORY_PORT=8080```
+```INVENTORY_PORT=<server-port>```
 
